@@ -69,6 +69,9 @@ android {
         // Trying to fix VerifyError/ClassNotFoundException
         multiDexKeepProguard file("multidex-keep.pro")
 
+        // Keep only English and Indonesian resources to reduce APK size.
+        resConfigs "en", "in"
+
         // The content of Universal apk
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
@@ -101,9 +104,9 @@ android {
     
     buildTypes {
         release {
-            // Enable minification
-            // shrinkResources true
-            // minifyEnabled true
+            // Enable minification and resource shrinking for smaller APK
+            shrinkResources true
+            minifyEnabled true
 
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 

@@ -150,8 +150,8 @@
     <string name="video_zoom_fit_height">Sesuaikan tinggi</string>
     <string name="video_zoom_fit_both">Sesuai dengan lebar atau tinggi</string>
     <string name="video_zoom_stretch">Regangkan</string>
-    <string name="color_scheme_teal">Hijau Kebiruan</string>
-    <string name="color_scheme_teal_oled">Hijau Kebiruan (OLED)</string>
+    <string name="color_scheme_teal">Violet Gelap</string>
+    <string name="color_scheme_teal_oled">Violet Gelap (OLED)</string>
     <string name="player_seek_preview_none">Tanpa pratinjau</string>
     <string name="player_seek_preview_single">Bingkai tunggal</string>
     <string name="player_seek_preview_carousel">Carousel</string>
