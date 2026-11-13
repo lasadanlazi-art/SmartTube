@@ -104,9 +104,10 @@ android {
     
     buildTypes {
         release {
-            // Enable minification and resource shrinking for smaller APK
-            shrinkResources true
-            minifyEnabled true
+            // Minification breaks reflective/YouTube API paths in this fork.
+            // Keep it disabled so playback, login and SponsorBlock stay intact.
+            shrinkResources false
+            minifyEnabled false
 
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
